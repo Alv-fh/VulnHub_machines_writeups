@@ -28,3 +28,4 @@ Comprobamos la IP en el navegador y efectivamente hay una página web.
 
 Ahora buscamos el archivo **robots.txt** que nos ha reportado nmap.
 
+![alt text](image.png)
