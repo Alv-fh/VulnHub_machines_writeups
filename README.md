@@ -1,1 +1,0 @@
-# VulnHub_machines_writeups
