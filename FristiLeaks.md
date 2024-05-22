@@ -121,6 +121,16 @@ Ahora lo ejecutamos y nos pide una clave, le daremos directamente a INTRO.
 
 ![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/c51b16ea-c19c-4934-a564-7bb4fb1a566b)
 
+Esto básicamente lo que hace es crear el usuario firefart con permisos root.
+
+Ahora nos metemos al usuario firefart.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/95493040-aea1-4cba-991e-e9ac916e5bb2)
+
+Y buscamos ficheros con extensión .txt y encontramos la flag.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/2f99800a-dc50-4f8e-88a8-c225f600a98d)
+
 
 
 
