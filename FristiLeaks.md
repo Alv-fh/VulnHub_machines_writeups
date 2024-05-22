@@ -73,4 +73,55 @@ Se que no puedo ver lo que hay en **uploads** pero se que está subido por lo qu
 
 Ya tenemos una shell, ahora vamos a hacerla fácil de utilizar.
 
+`script /dev/null -c bash`
+
+`CTRL + Z`
+
+`stty raw -echo; fg`
+
+`reset xterm`
+
+`export TERM=xterm`
+
+`export BASH=bash`
+
+Entramos en la carpeta home para ver usuarios.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/7124ef95-f8d6-464d-b03a-c081d3acc94b)
+
+Entramos en **eezeepz** y vemos que hay una nota que dice lo siguiente:
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/ce580a10-7bcb-417b-b55e-9089e94c09d7)
+
+Intento explotar el kernel, para ello busco que Sistema Operativo es y que version con el comando `uname -a`.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/3e73ba69-57c8-4a12-8901-88baf4b76aaf)
+
+Buscamos con el uso de `searchsploit linux kernel 2.6.32` posibles exploits y encontramos uno que puede servir a simple vista.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/03db14f3-6c44-49ca-add8-202368210168)
+
+Lo copiamos al directorio de trabajo y vemos como funciona.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/e9fb7111-a481-4092-890f-77eee9e3a11d)
+
+Tenemos que compilarlo en la máquina objetivo para evitar problemas ya que está en C. Por lo que monto un servidor en Python.
+
+`python3 -m http.server 4444`
+
+Y en la máquina objetivo en la carpeta /tmp ya que tenemos permisos de escritura nos los traemos.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/80742f0c-0c6e-4f79-b67b-80f806623660)
+
+Ahora compilamos y le damos permisos de ejecución.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/cd2a5aef-27fe-4e72-abfc-e68caa8fa8f9)
+
+Ahora lo ejecutamos y nos pide una clave, le daremos directamente a INTRO.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/c51b16ea-c19c-4934-a564-7bb4fb1a566b)
+
+
+
+
 
