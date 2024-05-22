@@ -35,10 +35,24 @@ Hacemos uso de **gobuster** pero no me reporta nada. Por lo que empiezo a probar
 
 ![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/ebac3e97-3d11-46ee-a398-4b423b102201)
 
-Ahora hacemos
+Probamos credenciales típicas como **admin** **admin**, pero después de darle vueltas, decido hacer fuzzing web otra vez pero a la ruta **/fristi**.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/d0975690-da6b-4046-a896-cedc59f2f660)
+
+Pruebo a ver que hay en el uploads.php y me hace una redirección al portal de admin en el que hay un login.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/86335577-3326-4a4b-a943-2854440374f6)
+
+Me pongo a revisar el contenido de la página y veo un posible usuario llamado **eezeepz**.
+
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/5b9b0d15-0492-498b-9b64-596bd67dc701)
+
+Veo que en la imagen hay un comentario que dice que está en Base 64. Por lo que lo decodifico y dice esto.
 
 
 
 
 
-![alt text](image.png)
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/7993f881-b0df-4235-b33d-c9956969d8a7)
+
+
