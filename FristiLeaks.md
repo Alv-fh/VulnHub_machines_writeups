@@ -65,9 +65,12 @@ Veo que puedo subir archivos, por lo que se me ocurre subir una reverse shell en
 
 Por lo que pruebo y pruebo extensiones hasta que pienso en poner .png delante de la extensión .php haciendo uso del comando `mv`.
 
-Veo que se sube correctamente y dice que se ha subido a **/uploads**.
+Compruebo que se sube correctamente y dice que se ha subido a **/uploads**.
 
-Veo que no puedo ver lo que hay en **uploads** pero se que está subido por lo que pongo la ruta pero sin antes hacer un `nc -nlvp 443`
+Se que no puedo ver lo que hay en **uploads** pero se que está subido por lo que pongo la ruta pero sin antes hacer un `nc -nlvp 443`
 
 ![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/c085a55a-fc15-4e01-9cb0-5a907ec13f17)
+
+Ya tenemos una shell, ahora vamos a hacerla fácil de utilizar.
+
 
