@@ -1,3 +1,6 @@
+![image](https://github.com/Alv-fh/VulnHub_machines_writeups/assets/109484163/ede714cb-9836-49b0-a2db-36c120dac02a)
+
+
 # Writeup
 
 ## Conocimiento de la red
